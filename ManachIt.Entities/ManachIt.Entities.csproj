@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2CC724F6-1373-47B2-9434-8C9A9BF48219}</ProjectGuid>
+    <ProjectGuid>{A5EBAB30-0195-4923-97AD-1FE4D8AF5AA3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ManachITDAL</RootNamespace>
-    <AssemblyName>ManachITDAL</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>ManachIt.Entities</RootNamespace>
+    <AssemblyName>ManachIt.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -41,8 +41,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,52 +49,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="ManachiITEdmx.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ManachiITEdmx.Context.tt</DependentUpon>
+    <Compile Include="Contextos\MainContext.cs" />
+    <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Migrations\201608080247270_AddUsuarioProducto.cs" />
+    <Compile Include="Migrations\201608080247270_AddUsuarioProducto.Designer.cs">
+      <DependentUpon>201608080247270_AddUsuarioProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManachiITEdmx.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ManachiITEdmx.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ManachiITEdmx.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ManachiITEdmx.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="PRODUCTO.cs">
-      <DependentUpon>ManachiITEdmx.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <EntityDeploy Include="ManachiITEdmx.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ManachiITEdmx.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ManachiITEdmx.edmx.diagram">
-      <DependentUpon>ManachiITEdmx.edmx</DependentUpon>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ManachiITEdmx.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ManachiITEdmx.edmx</DependentUpon>
-      <LastGenOutput>ManachiITEdmx.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ManachiITEdmx.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ManachiITEdmx.edmx</DependentUpon>
-      <LastGenOutput>ManachiITEdmx.cs</LastGenOutput>
-    </Content>
+    <EmbeddedResource Include="Migrations\201608080247270_AddUsuarioProducto.resx">
+      <DependentUpon>201608080247270_AddUsuarioProducto.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

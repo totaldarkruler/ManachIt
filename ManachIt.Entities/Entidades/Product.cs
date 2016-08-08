@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//prueba
-namespace ManachITDAL
+
+namespace ManachIt.Entities.Entidades
 {
-    public class Class1
+    class Product
     {
     }
 }
