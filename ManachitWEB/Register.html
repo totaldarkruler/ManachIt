@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="registroCtrl">
+        <h2>
+            Registro
+        </h2>
+        <ng-form>
+            <label> Email: </label>
+            <input type="email" ng-model="user.Email" />
+            <label> Password: </label>
+            <input type="password" ng-model="user.Password" />
+            <label> Confirm Password: </label>
+            <input type="password" ng-model="user.ConfirmPassword" />
+        </ng-form>
+        <button ng-click="registrar(user)"> Registrar!</button>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('registroCtrl', function($scope, $http) {
+            $scope.registrar = function(user){
+                $http({
+                    method: 'POST',
+                    url: 'http://localhost:53932/api/Account/Register',
+                    data: $scope.user
+                });
+            };
+        });
+    </script>
+</body>
+
+</html>
+
