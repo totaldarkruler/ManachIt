@@ -8,10 +8,11 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
-using ManachitWEBAPI.Providers;
-using ManachitWEBAPI.Models;
+using Manachit.WebAPI.Providers;
+using Manachit.WebAPI.Models;
+using ManachIt.Entities.Contextos;
 
-namespace ManachitWEBAPI
+namespace Manachit.WebAPI
 {
     public partial class Startup
     {
@@ -23,7 +24,7 @@ namespace ManachitWEBAPI
         public void ConfigureAuth(IAppBuilder app)
         {
             // Configure the db context and user manager to use a single instance per request
-            app.CreatePerOwinContext(ApplicationDbContext.Create);
+            app.CreatePerOwinContext(IdentityContext.Create);
             app.CreatePerOwinContext<ApplicationUserManager>(ApplicationUserManager.Create);
 
             // Enable the application to use a cookie to store information for the signed in user

@@ -4,9 +4,9 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(ManachitWEBAPI.Startup))]
+[assembly: OwinStartup(typeof(Manachit.WebAPI.Startup))]
 
-namespace ManachitWEBAPI
+namespace Manachit.WebAPI
 {
     public partial class Startup
     {

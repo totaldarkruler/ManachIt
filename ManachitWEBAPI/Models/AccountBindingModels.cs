@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 
-namespace ManachitWEBAPI.Models
+namespace Manachit.WebAPI.Models
 {
     // Models used as parameters to AccountController actions.
 

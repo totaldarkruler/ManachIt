@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ManachitWEBAPI.Models
+namespace Manachit.WebAPI.Models
 {
     // Models returned by AccountController actions.
 

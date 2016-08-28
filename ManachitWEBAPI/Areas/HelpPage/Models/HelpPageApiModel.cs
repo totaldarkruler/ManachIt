@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using ManachitWEBAPI.Areas.HelpPage.ModelDescriptions;
+using ManachitWebAPI.Areas.HelpPage.ModelDescriptions;
 
-namespace ManachitWEBAPI.Areas.HelpPage.Models
+namespace ManachitWebAPI.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

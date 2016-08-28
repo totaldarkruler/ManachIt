@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using ManachitWEBAPI.Areas.HelpPage.ModelDescriptions;
-using ManachitWEBAPI.Areas.HelpPage.Models;
+using ManachitWebAPI.Areas.HelpPage.ModelDescriptions;
+using ManachitWebAPI.Areas.HelpPage.Models;
 
-namespace ManachitWEBAPI.Areas.HelpPage
+namespace ManachitWebAPI.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

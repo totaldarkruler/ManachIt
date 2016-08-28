@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace ManachitWEBAPI
+namespace Manachit.WebAPI
 {
     public class BundleConfig
     {

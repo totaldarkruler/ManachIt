@@ -1,6 +1,6 @@
 using System;
 
-namespace ManachitWEBAPI.Areas.HelpPage.ModelDescriptions
+namespace ManachitWebAPI.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

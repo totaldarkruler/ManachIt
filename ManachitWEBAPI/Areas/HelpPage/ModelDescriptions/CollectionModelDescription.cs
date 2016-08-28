@@ -1,4 +1,4 @@
-namespace ManachitWEBAPI.Areas.HelpPage.ModelDescriptions
+namespace ManachitWebAPI.Areas.HelpPage.ModelDescriptions
 {
     public class CollectionModelDescription : ModelDescription
     {

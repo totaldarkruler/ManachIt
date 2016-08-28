@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace ManachitWEBAPI.Areas.HelpPage
+namespace ManachitWebAPI.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

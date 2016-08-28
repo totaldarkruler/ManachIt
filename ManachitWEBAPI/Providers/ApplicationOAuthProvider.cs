@@ -9,9 +9,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using ManachitWEBAPI.Models;
+using Manachit.WebAPI.Models;
+using ManachIt.Entities.Entidades;
 
-namespace ManachitWEBAPI.Providers
+namespace Manachit.WebAPI.Providers
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
@@ -31,7 +32,7 @@ namespace ManachitWEBAPI.Providers
         {
             var userManager = context.OwinContext.GetUserManager<ApplicationUserManager>();
 
-            ApplicationUser user = await userManager.FindAsync(context.UserName, context.Password);
+            Usuario user = await userManager.FindAsync(context.UserName, context.Password);
 
             if (user == null)
             {

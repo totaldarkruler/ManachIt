@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using ManachitWEBAPI.Areas.HelpPage.ModelDescriptions;
-using ManachitWEBAPI.Areas.HelpPage.Models;
+using ManachitWebAPI.Areas.HelpPage.ModelDescriptions;
+using ManachitWebAPI.Areas.HelpPage.Models;
 
-namespace ManachitWEBAPI.Areas.HelpPage.Controllers
+namespace ManachitWebAPI.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.
