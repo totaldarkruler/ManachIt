@@ -66,6 +66,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.module.js" />
+    <Content Include="app\components\dashboard\dashboardController.js" />
+    <Content Include="app\components\dashboard\dashboardService.js" />
+    <Content Include="app\components\dashboard\dashboardView.html" />
     <Content Include="assets\js\Main.js" />
     <Content Include="Register.html" />
     <Content Include="packages.config" />
@@ -77,6 +81,7 @@
     <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="app\app.routes.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -102,7 +107,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\components\" />
     <Folder Include="app\shared\" />
   </ItemGroup>
   <PropertyGroup>
