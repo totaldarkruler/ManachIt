@@ -3,8 +3,32 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
+    <script src="assets/css/bootstrap-3.3.7-dist/css/bootstrap.css"></script>
+    <script src="assets/scripts/angular.min (1).js"></script>
+    <script src="assets/scripts/ui-bootstrap-tpls-2.0.1.min.js"></script>
 </head>
 <body>
-
+    <div ng-app="ManageItApp" ng-controller="InicioCtrl">
+        <h2>
+            Registro
+        </h2>
+        <ng-form>
+            <label> Usuario: </label>
+            <input type="email" ng-model="user.Email" />
+            <label> Password: </label>
+            <input type="password" ng-model="user.Password" />
+            <label> Confirm Password: </label>
+            <input type="password" ng-model="user.ConfirmPassword" />
+        </ng-form>
+        <button ng-click="login(user)"> Registrar!</button>
+    </div>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('InicioCtrl', function ($scope, $http) {
+            $scope.login = function (user) {
+              
+            };
+        });
+    </script>
 </body>
 </html>
