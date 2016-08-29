@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\js\Main.js" />
     <Content Include="Register.html" />
     <Content Include="packages.config" />
     <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
