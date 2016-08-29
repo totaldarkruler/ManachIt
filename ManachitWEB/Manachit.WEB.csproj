@@ -66,6 +66,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\components\Producto\ProductoComponente.js" />
+    <Content Include="app\components\Producto\ProductoDetalle.html" />
+    <Content Include="app\components\Producto\ProductoGrid.html" />
     <Content Include="Register.html" />
     <Content Include="packages.config" />
     <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
@@ -101,7 +104,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\components\" />
     <Folder Include="app\shared\" />
   </ItemGroup>
   <PropertyGroup>
