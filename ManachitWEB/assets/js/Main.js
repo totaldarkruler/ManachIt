@@ -6,7 +6,7 @@ manageitApp.config(function ($routeProvider) {
 	$routeProvider
 		// route for the home page
 		.when('/', {
-			templateUrl: 'components/dashboard/dashboardView.html',
+			templateUrl: 'app/components/dashboard/dashboardView.html',
 			controller: 'dashboardController'
 		})
 
