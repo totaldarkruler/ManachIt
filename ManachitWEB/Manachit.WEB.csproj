@@ -68,14 +68,14 @@
   <ItemGroup>
     <Content Include="Register.html" />
     <Content Include="packages.config" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
-    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -84,23 +84,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.css" />
-    <Content Include="css\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
-    <Content Include="css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="css\bootstrap-3.3.7-dist\js\bootstrap.js" />
-    <Content Include="css\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
-    <Content Include="css\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <Content Include="assets\css\bootstrap-3.3.7-dist\js\npm.js" />
     <Content Include="index.html" />
-    <Content Include="scripts\angular.min %281%29.js" />
-    <Content Include="scripts\ui-bootstrap-tpls-2.0.1.min.js" />
+    <Content Include="assets\scripts\angular.min %281%29.js" />
+    <Content Include="assets\scripts\ui-bootstrap-tpls-2.0.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\components\" />
+    <Folder Include="app\shared\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -112,7 +115,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>54142</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
