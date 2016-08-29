@@ -1,34 +1,24 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html ng-app="manageitApp">
 <head>
     <title></title>
 	<meta charset="utf-8" />
-    <script src="assets/css/bootstrap-3.3.7-dist/css/bootstrap.css"></script>
-    <script src="assets/scripts/angular.min (1).js"></script>
-    <script src="assets/scripts/ui-bootstrap-tpls-2.0.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <!-- load angular and angular route via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="assets/js/Main.js"></script>
 </head>
-<body>
-    <div ng-app="ManageItApp" ng-controller="InicioCtrl">
-        <h2>
-            Registro
-        </h2>
-        <ng-form>
-            <label> Usuario: </label>
-            <input type="email" ng-model="user.Email" />
-            <label> Password: </label>
-            <input type="password" ng-model="user.Password" />
-            <label> Confirm Password: </label>
-            <input type="password" ng-model="user.ConfirmPassword" />
-        </ng-form>
-        <button ng-click="login(user)"> Registrar!</button>
+<body ng-controller="mainController" >
+    <div id="main">
+        <div ng-view></div>
     </div>
-    <script>
-        var app = angular.module('myApp', []);
-        app.controller('InicioCtrl', function ($scope, $http) {
-            $scope.login = function (user) {
-              
-            };
-        });
-    </script>
+
 </body>
 </html>
