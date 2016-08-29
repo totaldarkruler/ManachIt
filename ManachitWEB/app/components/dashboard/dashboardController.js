@@ -1,4 +1,6 @@
-﻿manageitApp.controller('dashboardController', function ($scope) {
+﻿
+
+manageitApp.controller('dashboardController', function ($scope) {
 	// create a message to display in our view
-	$scope.message = 'Dashboard';
+	$scope.message = 'Aqui va el Dashboard';
 });
