@@ -8,6 +8,15 @@ manageitApp.config(function ($routeProvider) {
 		.when('/', {
 			templateUrl: 'app/components/dashboard/dashboardView.html',
 			controller: 'dashboardController'
+
+		})
+        .when('/main', {
+            templateUrl: 'app/components/dashboard/dashboardView.html',
+            controller: 'dashboardController'
+		})
+        .when('/clientes', {
+		    templateUrl: 'app/components/clientes/clientesView.html',
+		    controller: 'dashboardController'
 		})
 
 });
