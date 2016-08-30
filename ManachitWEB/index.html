@@ -2,6 +2,7 @@
 <head>
     <title></title>
 	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -15,8 +16,30 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
     <script src="assets/js/Main.js"></script>
     <script src="app/components/dashboard/dashboardController.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet" />
 </head>
 <body ng-controller="mainController" >
+    <nav class="navbar navbar-inverse navbar-fixed-top"">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#main">ManageIt</a>
+             
+            </div>
+            <div class="navbar-right" style="margin-right:10px;">
+                <button type="button" class="btn btn-default navbar-btn">Iniciar Sesion</button>
+                <p class="navbar-text">Usuario/Empresa</p>
+            </div>
+        </div>
+    </nav>
+
+    <!--Contenido-->
     <div id="main">
         <div ng-view></div>
     </div>

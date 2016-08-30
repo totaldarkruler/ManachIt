@@ -67,9 +67,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.module.js" />
+    <Content Include="app\components\clientes\clientesView.html" />
     <Content Include="app\components\dashboard\dashboardController.js" />
     <Content Include="app\components\dashboard\dashboardService.js" />
     <Content Include="app\components\dashboard\dashboardView.html" />
+    <Content Include="assets\css\main.css" />
+    <Content Include="assets\images\almacen.png" />
+    <Content Include="assets\images\blue-gradient.jpg" />
+    <Content Include="assets\images\clientes.png" />
+    <Content Include="assets\images\inventario.png" />
     <Content Include="assets\js\Main.js" />
     <Content Include="Register.html" />
     <Content Include="packages.config" />
