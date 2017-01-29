@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.module.js" />
+    <Content Include="app\components\clientes\clientesController.js" />
     <Content Include="app\components\clientes\clientesView.html" />
     <Content Include="app\components\dashboard\dashboardController.js" />
     <Content Include="app\components\dashboard\dashboardService.js" />

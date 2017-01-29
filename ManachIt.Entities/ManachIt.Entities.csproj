@@ -59,6 +59,10 @@
   <ItemGroup>
     <Compile Include="Contextos\IdentityContext.cs" />
     <Compile Include="Contextos\MainContext.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Inventario.cs" />
+    <Compile Include="Entidades\Negocio.cs" />
+    <Compile Include="Entidades\Orden.cs" />
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Migrations\201608080247270_AddUsuarioProducto.cs" />
@@ -68,6 +72,10 @@
     <Compile Include="Migrations\201608160643032_MigracionIdentity.cs" />
     <Compile Include="Migrations\201608160643032_MigracionIdentity.Designer.cs">
       <DependentUpon>201608160643032_MigracionIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701260332336_CreacionTablasNegocio.cs" />
+    <Compile Include="Migrations\201701260332336_CreacionTablasNegocio.Designer.cs">
+      <DependentUpon>201701260332336_CreacionTablasNegocio.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608160643032_MigracionIdentity.resx">
       <DependentUpon>201608160643032_MigracionIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701260332336_CreacionTablasNegocio.resx">
+      <DependentUpon>201701260332336_CreacionTablasNegocio.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -16,5 +16,7 @@ namespace ManachIt.Entities.Entidades
         public string Name { get; set; }
         public string Desc { get; set; }
 
+        //Navegacion
+        public List<Orden> Ordenes { get; set; }
     }
 }

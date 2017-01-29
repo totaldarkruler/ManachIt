@@ -13,10 +13,11 @@ namespace ManachIt.Entities.Entidades
 {
     public class Usuario : IdentityUser
     {
-        [ForeignKey("Roles")]
-        public int RoleId { get; set; }
+        //[ForeignKey("Roles")]
+        //public int RoleId { get; set; }
+        public int NegocioId { get; set; }
 
-     
+
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<Usuario> manager, string authenticationType)
         {

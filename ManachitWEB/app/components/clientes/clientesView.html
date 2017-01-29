@@ -1,3 +1,65 @@
-﻿<div>
-    Clientes
+﻿<div class="panel panel-default" ng-app="manageitApp" ng-controller="clientesController">
+    <div class="panel-heading nav navbar-default">
+        <div>
+            <div class="pull-left">
+                <!--<h3 class="panel-title"><a href="#" class="">Clientes</a></h3>-->
+                <label class="label label-info">Clientes</label>
+
+            </div>
+            <div class="hidden">
+                <h4 class="pull-right"><small><strong>Price:</strong></small> $12,345</h4>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a><strong>Ejemplo</strong></a></li>
+                    <li>
+                        <button type="submit" class="btn btn-default navbar-btn" ng-click="nuevoCliente()">Nuevo Cliente</button>
+                    </li>
+                    <li>
+                        <a href="#" class="">Link</a>
+                    </li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="">Action</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Another action</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Something else here</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#" class="">Separated link</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#" class="">One more separated link</a>
+                            </li>
+                        </ul>
+                    </li>-->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="panel-body">
+       Grid Aqui!!
+    </div>
+</div>
+
+<div modal="showModal"  class="modal fade" close="cancel()">
+    <div class="modal-header">
+        <h4>Modal Dialog</h4>
+    </div>
+    <div class="modal-body">
+        <p>Example paragraph with some text.</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-success" ng-click="ok()">Okay</button>
+        <button class="btn" ng-click="cancel()">Cancel</button>
+    </div>
 </div>
