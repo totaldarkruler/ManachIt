@@ -2,6 +2,7 @@
 using ManachIt.Entities;
 using ManachIt.Entities.Entidades;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -12,9 +13,9 @@ namespace ManachIt.Entities.Contextos
 
         public MainContext() : base("MainContextConn") {}
 
-        public static IdentityContext Create()
+        public static MainContext Create()
         {
-            return new IdentityContext();
+            return new MainContext();
         }
 
 
