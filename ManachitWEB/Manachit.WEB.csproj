@@ -77,9 +77,10 @@
     <Content Include="assets\images\clientes.png" />
     <Content Include="assets\images\inventario.png" />
     <Content Include="assets\js\Main.js" />
-    <Content Include="app\components\Producto\ProductoComponente.js" />
-    <Content Include="app\components\Producto\ProductoDetalle.html" />
-    <Content Include="app\components\Producto\ProductoGrid.html" />
+    <Content Include="app\components\producto\productoController.js" />
+    <Content Include="app\components\producto\productoDetalle.html" />
+    <Content Include="app\components\producto\productoGrid.html" />
+    <Content Include="assets\scripts\ui-bootstrap-tpls-2.5.0.min.js" />
     <Content Include="Register.html" />
     <Content Include="packages.config" />
     <Content Include="assets\css\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />

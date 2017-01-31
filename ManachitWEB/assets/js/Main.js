@@ -1,5 +1,5 @@
 ﻿// create the module
-var manageitApp = angular.module('manageitApp', ['ngRoute']);
+var manageitApp = angular.module('manageitApp', ['ngRoute', 'ui.bootstrap']);
 
 //routing
 manageitApp.config(function ($routeProvider) {
@@ -13,7 +13,11 @@ manageitApp.config(function ($routeProvider) {
         .when('/main', {
             templateUrl: 'app/components/dashboard/dashboardView.html',
             controller: 'dashboardController'
-		})
+        })
+        .when('/productos', {
+            templateUrl: 'app/components/producto/productoGrid.html',
+            controller: 'productoController'
+        })
         .when('/clientes', {
 		    templateUrl: 'app/components/clientes/clientesView.html',
 		    controller: 'dashboardController'
