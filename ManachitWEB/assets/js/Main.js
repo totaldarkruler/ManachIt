@@ -20,7 +20,7 @@ manageitApp.config(function ($routeProvider) {
         })
         .when('/clientes', {
 		    templateUrl: 'app/components/clientes/clientesView.html',
-		    controller: 'dashboardController'
+		    controller: 'clientesController'
 		})
 
 });
